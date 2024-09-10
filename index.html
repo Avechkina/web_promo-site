@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liverpool bar. Est. 2018</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/images/favicon.ico">
+</head>
+
+<body>
+    <div id="preloader">
+        <img src="./assets/images/preloader.gif" alt="preloader">
+        <p>загрузка</p>
+    </div>
+    <header>
+        <div class="div-logo" data-link='0'>
+            <img class='img-logo' src="./assets/images/Logo.svg" alt="logo">
+            <div>
+                <h1 class="logo" onclick="window.location.href='#1';">Liverpool bar</h1>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" data-link='0' class="link active">Главная</a></li>
+                <li><a href="#" data-link='1' class="link">О нас</a></li>
+                <li><a href="#" data-link='2' class="link">Меню</a></li>
+                <li><a href="#" data-link='3' class="link">Афиша</a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+    <main>
+        <div id="left"><img id='arrow-left' src="./assets/images/arrow.svg" alt="arrow-left"></div>
+        <div id="wrapper">
+            <div id="carusel">
+                <section id='sec-main' data-sec='0'>
+                    <button id="reserve-btn">забронировать</button>
+                    <p class="p-big">YOU'LL NEVER WALK ALONE</p>
+                </section>
+                <section id='sec-about' data-sec='1'>
+                    <div class="div-content">
+                        <div class="div-about">
+                            <h2 class="vertical-text">О нас</h2>
+                            <p id="p-about"><span>Liverpool</span> — маленький уютный локальный паб. Большое количество
+                                дерева, мягкий свет,
+                                деревянная барная стойка и множество антуражных мелочей — все это создает неповторимую
+                                атмосферу классического британского паба, где можно поддержать свою команду и
+                                насладиться просмотром футбола.</p>
+                            <p><b>Время работы:</b><br>Пн-Чт: 14:00 - 23:00<br>Пт-Сб: 14:00 - 00:00<br>Вс: 14:00 - 23:00
+                            </p>
+                            <p>Забронировать столик можно по телефону:</p>
+                            <p id="p-tel" onclick="window.location.href='tel:+375293595';">+375 29 3595444</p>
+                            <p>Мы находимся по адресу:<br>ул. Мясникова, дом 35</p>
+                            <span onclick="window.open('https://yandex.by/maps/-/CDDEvL5N','_blank');"
+                                class="map">открыть карту</span>
+                            <iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=1389163561"></iframe>
+                        </div>
+                        <div class="div-photo">
+                            <h2 class="vertical-text">Фото</h2>
+                            <div class="photo-wrapper">
+                                <img id='pub-photo' src="./assets/images/photo-0.jpg" alt="pub-photo">
+                                <button id="left-photo"><img src="./assets/images/mini-arrow.svg"
+                                        alt="arrow-left"></button>
+                                <button id="right-photo"><img src="./assets/images/mini-arrow.svg"
+                                        alt="arrow-right"></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id='sec-menu' data-sec='2'>
+                    <h2 id="h2-menu">Меню</h2>
+                    <div class="div-content menu">
+                        <div><img id='beer' src="./assets/images/beer.png" alt="beer"></div>
+                        <div><img id='cocktail' src="./assets/images/cocktail.png" alt="cocktail"></div>
+                        <div><img id='spirit' src="./assets/images/spirit.png" alt="spirit"></div>
+                        <div><img id='food' src="./assets/images/food.png" alt="food"></div>
+                    </div>
+                </section>
+                <section id='sec-afisha' data-sec='3'>
+                    <h2 >Афиша</h2>
+                    <div class="div-content">
+                        <div id="div-afisha" class="div-afisha open">
+                            <div class="vertical-text hidden center">
+                                АФИША
+                            </div>
+                            <div>
+                                <h3>09.09 Понедельник</h3>
+                                <div>
+                                    <p>20:00 Speaking Club</p>
+                                    <p>21:45 Франция - Белгия</p>
+                                </div>
+                                <h3>10.09 Вторник</h3>
+                                <p>21:45 Нидерланды - Германия</p>
+                                <h3>11.09 Среда</h3>
+                                <p>20:00 Cinema. Вечер кино</p>
+                                <h3>12.09 Четверг</h3>
+                                <p>нет трансляций</p>
+                                <h3>13.09 Пятница</h3>
+                                <p>21:30 Боруссия Д - Хайденхайм</p>
+                                <h3>14.09 Суббота</h3>
+                                <div>
+                                    <p>14:30 Саутгемнтон - Манчестер Юнайтед</p>
+                                    <p>17:00 Ливерпуль - Ноттингем Форест</p>
+                                    <p>19:30 Астон Вилла - Эвертон</p>
+                                    <p>22:00 Борнмут - Челси</p>
+                                </div>
+                                <h3>15.09 Воскресенье</h3>
+                                <p>16:00 Тоттенхэм - Арсенал</p>
+                            </div>
+                            <div class="btn-wrapper ">
+                                <div id="subscribe">подписаться на рассылку</div>
+                            </div>
+                        </div>
+                        <div id="div-game" class="div-game closed">
+                            <div class="vertical-text">
+                                ПОЛУЧИ СКИДКУ!
+                            </div>
+                            <div id='game-wrapper' class="hidden">
+                                <h3>Ответь на несколько вопросов и получи скидку!</h3>
+                                <div id="div-q"></div>
+                                <button id="btn-game">НАЧАТЬ</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="right"><img id='arrow-right' src="./assets/images/arrow.svg" alt="arrow-right"></div>
+    </main>
+    <footer>
+        <p class="p-footer">© 2024, design by Natallia Avechkina</p>
+        <div>
+            <button class="btn-footer" onclick="window.open('https://www.instagram.com/bar.liverpool','_blank');"><img
+                    src="./assets/images/instagram.svg" alt="instagram"></button>
+            <button class="btn-footer" onclick="window.location.href='tel:+375293595';"><img
+                    src="./assets/images/phone.svg" alt="telephone"></button>
+        </div>
+    </footer>
+    <div id="modal-wrapper" class="hidden"></div>
+    <div id="blackout"></div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
